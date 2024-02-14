@@ -1,1 +1,3 @@
-/
+Toegangkelijkheid, niet goed toegepast in industrie,
+phantom uitleeggen hoe accessible gemaakt, lijstje, focus state voor keyboard gebruikers, aria attributes, toegankelijke carousels, focus guards en esc key... niet elke gebruiker gebruikt muis, voor mensen die visueel wel kunnen zien handig feedback te krijgen op welk element je gefocust bent, globale focus state, rode lijn, focus visible pseudo class,
+aria label, beschrijven tekst aan element geeft, aria controls, informatie geven dat elementen met elkaar in verbinding staan, aria expended
