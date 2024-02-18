@@ -1,0 +1,7 @@
+main {
+    width: 100vw;
+    height: calc(100vh - 7.5em);
+
+    display: flex;
+    align-items: center;
+}

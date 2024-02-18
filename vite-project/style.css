@@ -1,4 +1,39 @@
+:root {
+  /* COLORS */
+  --color-1: #141D18;
+  --color-2: #313934;
+  --color-3: #DAFF96;
+  --color-4: #ACACE8;
+  --color-5: #FBDDF5;
+  --color-6: #FFFFFF;
+  --color-7: #1F1F1F;
+  --color-8: #CFCFCF;
+
+  /* SPACINGS */
+  --spacing-large: 5em; 
+  --spacing-medium: 2.5em; 
+
+  /* BORDER RADIUSSES */
+  --border-radius-large: 1.5em;
+  --border-radius-medium: 1em;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-1);
+}
+
+h1, h2, h3, h4, h5, h6, a, button {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a, button {
+  cursor: pointer;
 }
