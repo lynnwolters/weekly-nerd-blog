@@ -1,0 +1,114 @@
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+main ul {
+    width: 100%;
+    height: 100%;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+    display: flex;
+    align-items: center;
+
+    padding-inline: calc((100vw - 16em) / 2);
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: .2em;
+
+    padding: var(--spacing-extra-large);
+}
+
+::-webkit-scrollbar-track {    
+    background: var(--color-7);
+
+    border-radius: var(--border-radius-large);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-6);
+
+    border-radius: var(--border-radius-large);
+}
+
+main ul li {
+    min-width: 16em;
+    height: 40%;
+
+    scroll-snap-align: center;
+
+    margin: 0 var(--spacing-extra-large);
+
+    list-style: none;
+}
+
+main ul li button {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: var(--spacing-extra-small);
+
+    background-color: var(--color-5);
+
+    border: none;
+    border-radius: var(--border-radius-extra-large);
+
+    transition: all .2s ease-in-out;
+}
+
+main ul li:nth-of-type(1) button { background-color: var(--color-2); }
+main ul li:nth-of-type(2) button { background-color: var(--color-3); }
+main ul li:nth-of-type() button { background-color: var(--color-4); }
+
+main ul li button.animate-carousel {
+    scale: 1.2;
+    rotate: -4deg;
+}
+
+main ul li button div {
+    width: 100%;
+    min-height: 50%;
+
+    margin-bottom: var(--spacing-extra-small);
+
+    background-color: var(--color-5);
+
+    border-radius: var(--border-radius-large);
+}
+
+main ul li button div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main ul li button h2, main ul li button h3 {
+    width: 100%;
+
+    font-size: 1.75em;
+    color: var(--color-1);
+}
+
+main ul li button h2 {
+    text-align: left;
+}
+
+main ul li button h3 {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
