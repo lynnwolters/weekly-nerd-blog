@@ -16,6 +16,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./static/styles/nav.css">
     <link rel="stylesheet" href="./static/styles/carousel.css">
     <link rel="stylesheet" href="./static/styles/cursor.css">
   </head>
@@ -24,6 +25,27 @@
 
     <!-- CURSOR -->
     <!-- <div class="cursor"></div> -->
+
+    <!-- NAV -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <h1>Weekly Nerd</h1>
+          </a>
+        </li>
+        <div>
+          <li>
+            <a href="#">Timeline</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="transition-fade" id="swup">
 
     <!-- CAROUSEL -->
     <main>
@@ -157,10 +179,10 @@
       </ul>
     </main>
 
+    </div>
+
     <!-- SCRIPT -->
-    <script module="type" src="index.js"></script>
-    <script module="type" src="./static/scripts/cursor.js"></script>
-    <script module="type" src="./static/scripts/carousel.js"></script>
+    <script type="module" src="index.js"></script>
 
   </body>
 </html>

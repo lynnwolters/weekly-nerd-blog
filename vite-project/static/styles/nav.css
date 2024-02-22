@@ -1,0 +1,39 @@
+nav {
+    width: calc(100vw - 10em);
+    height: fit-content;
+
+    position: fixed;
+
+    margin: var(--spacing-large) var(--spacing-extra-large);
+}
+
+nav ul {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul div {
+    display: flex;
+}
+
+nav ul div li:nth-of-type(1) {
+    margin-right: var(--spacing-large);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.25em;
+    color: var(--color-6);
+    text-decoration: none;
+}
+
+nav ul li a h1 {
+    font-size: 1.1em;
+}
