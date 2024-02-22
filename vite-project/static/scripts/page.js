@@ -1,4 +1,4 @@
-import { Carousel } from "./logic/carousel.js"
+import { app } from "/index.js" 
 
 export class Page { 
     constructor () {
@@ -8,14 +8,14 @@ export class Page {
 
     init = () => {
         this.getPageTitle()
-        this.carousel = new Carousel()
+        app.initCarousel()
     }
 
     getPageTitle = () => {
-        console.log("initPage: ", this.title) 
+        console.log("Page title", this.title) 
     }
 
     destroy = () => { 
-        console.log("destroy page", this.title) 
+        console.log("Destroy page", this.title) 
     }
 }
