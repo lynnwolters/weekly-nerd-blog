@@ -1,6 +1,7 @@
 import { Page } from "./page.js" 
 import { Router } from "./router.js" 
 import { Carousel } from "./logic/carousel.js"
+import { Cursor} from "./logic/cursor.js"
 
 export class App { 
     constructor () {
@@ -10,6 +11,7 @@ export class App {
     init = () => {
         this.router = new Router()
         this.initCarousel()
+        this.cursor = new Cursor()
     }
     
     handleContentReplaced = () => { 
@@ -18,9 +20,9 @@ export class App {
     
     createPage = () => {
         if (this.page) {
-            this.page.destroy() 
+            this.page.destroy()
         }
-        this.page = new Page() 
+        this.page = new Page()
     }
 
     initCarousel = () => {

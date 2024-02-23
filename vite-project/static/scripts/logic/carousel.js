@@ -4,7 +4,7 @@ export class Carousel {
         if (!this.carousel) {
             return false
         }
-        this.cards = document.querySelectorAll("main ul li button")
+        this.cards = document.querySelectorAll("main ul li a")
         this.init()
     }
 

@@ -27,6 +27,7 @@
     min-width: 16em;
     height: 40%;
 
+    position: relative;
     scroll-snap-align: center;
 
     margin: 0 var(--spacing-extra-large);
@@ -34,7 +35,7 @@
     list-style: none;
 }
 
-.main-index ul li button {
+.main-index ul li a {
     width: 100%;
     height: 100%;
 
@@ -48,18 +49,20 @@
     border: none;
     border-radius: var(--border-radius-extra-large);
 
+    text-decoration: none;
+
     transition: all .2s ease-in-out;
 }
 
-.main-index li:nth-of-type(1) button { background-color: var(--color-2); }
-.main-index li:nth-of-type(2) button { background-color: var(--color-3); }
-.main-index ul li:nth-of-type(3) button { background-color: var(--color-4); }
+.main-index li:nth-of-type(1) a { background-color: var(--color-2); }
+.main-index li:nth-of-type(2) a { background-color: var(--color-3); }
+.main-index ul li:nth-of-type(3) a { background-color: var(--color-4); }
 
-.main-index ul li button.animate-cards {
+.main-index ul li a.animate-cards {
     scale: 1.2;
 }
 
-.main-index ul li button div {
+.main-index ul li a div {
     width: 100%;
     min-height: 50%;
 
@@ -70,24 +73,24 @@
     border-radius: var(--border-radius-large);
 }
 
-.main-index ul li button div img {
+.main-index ul li a div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.main-index ul li button h2, main ul li button h3 {
+.main-index ul li a h2, main ul li a h3 {
     width: 100%;
 
-    font-size: 1.75em;
+    font-size: 1.5em;
     color: var(--color-1);
 }
 
-.main-index ul li button h2 {
+.main-index ul li a h2 {
     text-align: left;
 }
 
-.main-index ul li button h3 {
+.main-index ul li a h3 {
     height: 100%;
 
     display: flex;

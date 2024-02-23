@@ -1,4 +1,5 @@
 import { app } from "/index.js" 
+import { TransitionOverlay } from "./logic/transitionOverlay.js"
 
 export class Page { 
     constructor () {
@@ -9,6 +10,7 @@ export class Page {
     init = () => {
         this.getPageTitle()
         app.initCarousel()
+        this.transitionOverlay = new TransitionOverlay(app.carousel)
     }
 
     getPageTitle = () => {
