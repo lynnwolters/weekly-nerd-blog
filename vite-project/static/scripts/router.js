@@ -3,7 +3,9 @@ import { app } from "/index.js"
 
 export class Router {
     constructor () {
-        this.swup = new Swup({}) 
+        this.swup = new Swup({
+            containers: ["#swup"]
+        }) 
         this.init()
     }
     

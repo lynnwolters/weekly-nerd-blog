@@ -18,13 +18,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./static/styles/nav.css">
     <link rel="stylesheet" href="./static/styles/carousel.css">
-    <link rel="stylesheet" href="./static/styles/cursor.css">
+    <link rel="stylesheet" href="./static/styles/swup.css">
   </head>
 
   <body>
-
-    <!-- CURSOR -->
-    <!-- <div class="cursor"></div> -->
 
     <!-- NAV -->
     <nav>
@@ -45,10 +42,8 @@
       </ul>
     </nav>
 
-    <div class="transition-fade" id="swup">
-
       <!-- CAROUSEL -->
-      <main>
+      <main id="swup" class="main-index">
         <ul>
           <li>
             <button>
@@ -179,7 +174,7 @@
         </ul>
       </main>
 
-    </div>
+      <div class="transition-overlay"></div>
 
     <!-- SCRIPT -->
     <script type="module" src="index.js"></script>

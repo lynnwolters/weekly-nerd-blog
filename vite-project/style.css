@@ -24,9 +24,9 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: var(--color-1);
-}
+} */
 
 h1, h2, h3, h4, h5, h6, a, button {
   font-family: "Outfit", sans-serif;
@@ -37,13 +37,4 @@ h1, h2, h3, h4, h5, h6, a, button {
 
 a, button {
   cursor: pointer;
-}
-
-.transition-fade {
-  opacity: 1;
-  transition: .8s all ease-out;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
 }

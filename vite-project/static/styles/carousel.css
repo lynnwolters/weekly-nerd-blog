@@ -1,12 +1,14 @@
-main {
+.main-index {
     width: 100vw;
     height: 100vh;
 
     display: flex;
     align-items: center;
+
+    background-color: var(--color-1);
 }
 
-main ul {
+.main-index ul {
     width: 100%;
     height: 100%;
 
@@ -21,7 +23,7 @@ main ul {
     padding-inline: calc((100vw - 16em) / 2);
 }
 
-main ul li {
+.main-index ul li {
     min-width: 16em;
     height: 40%;
 
@@ -32,7 +34,7 @@ main ul li {
     list-style: none;
 }
 
-main ul li button {
+.main-index ul li button {
     width: 100%;
     height: 100%;
 
@@ -49,15 +51,15 @@ main ul li button {
     transition: all .2s ease-in-out;
 }
 
-main ul li:nth-of-type(1) button { background-color: var(--color-2); }
-main ul li:nth-of-type(2) button { background-color: var(--color-3); }
-main ul li:nth-of-type(3) button { background-color: var(--color-4); }
+.main-index li:nth-of-type(1) button { background-color: var(--color-2); }
+.main-index li:nth-of-type(2) button { background-color: var(--color-3); }
+.main-index ul li:nth-of-type(3) button { background-color: var(--color-4); }
 
-main ul li button.animate-carousel {
+.main-index ul li button.animate-cards {
     scale: 1.2;
 }
 
-main ul li button div {
+.main-index ul li button div {
     width: 100%;
     min-height: 50%;
 
@@ -68,24 +70,24 @@ main ul li button div {
     border-radius: var(--border-radius-large);
 }
 
-main ul li button div img {
+.main-index ul li button div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-main ul li button h2, main ul li button h3 {
+.main-index ul li button h2, main ul li button h3 {
     width: 100%;
 
     font-size: 1.75em;
     color: var(--color-1);
 }
 
-main ul li button h2 {
+.main-index ul li button h2 {
     text-align: left;
 }
 
-main ul li button h3 {
+.main-index ul li button h3 {
     height: 100%;
 
     display: flex;

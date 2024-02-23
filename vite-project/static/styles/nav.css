@@ -3,6 +3,7 @@ nav {
     height: fit-content;
 
     position: fixed;
+    z-index: 999;
 
     margin: var(--spacing-large) var(--spacing-extra-large);
 }

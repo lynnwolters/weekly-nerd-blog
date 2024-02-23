@@ -10,26 +10,25 @@ export class Carousel {
 
     init = () => {
         this.bindEvents()
+        this.animateCards()
     }
 
     bindEvents = () => {
-        this.carousel.addEventListener("scroll", () => {
-            this.cards.forEach(card => {
-                this.animateCarousel(card)
-            })
-        })
+        this.carousel.addEventListener("scroll", this.animateCards)
     }
 
-    animateCarousel = (card) => {
-        const rect = card.getBoundingClientRect()
-        const containerRect = this.carousel.getBoundingClientRect()
-        const cardCenter = rect.left + rect.width / 2
-        const containerCenter = containerRect.left + containerRect.width / 2
+    animateCards = () => {
+        this.cards.forEach(card => {
+            const rect = card.getBoundingClientRect()
+            const containerRect = this.carousel.getBoundingClientRect()
+            const cardCenter = rect.left + rect.width / 2
+            const containerCenter = containerRect.left + containerRect.width / 2
 
-        if (Math.abs(cardCenter - containerCenter) < 10) { 
-            card.classList.add("animate-carousel")
-        } else {
-            card.classList.remove("animate-carousel")
-        }
-    }   
+            if (Math.abs(cardCenter - containerCenter) < 10) { 
+                card.classList.add("animate-cards")
+            } else {
+                card.classList.remove("animate-cards")
+            }
+        })
+    }
 }
