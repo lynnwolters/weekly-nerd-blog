@@ -4,7 +4,7 @@ import { Carousel } from "./logic/carousel.js"
 import { Cursor} from "./logic/cursor.js"
 
 export class App { 
-    constructor () {
+    constructor() {
         this.init() 
     }
     

@@ -3,7 +3,7 @@ export class TransitionOverlay {
         this.transitionOverlay = document.querySelector(".transition-overlay")
         if (!this.transitionOverlay) {
             return false
-        }
+        } 
         this.carousel = carousel
         this.init()
     }
@@ -16,7 +16,10 @@ export class TransitionOverlay {
     bindEvents = () => {}
 
     animateTransitionOverlay = () => {
-        console.log("Cards", this.carousel.cards)
+        const cards = this.carousel.cards
+        cards.forEach((index, card) => {
+            console.log("Cards", card)
+        })
     }
 }
 

@@ -2,7 +2,7 @@ import Swup from "swup"
 import { app } from "/index.js"
 
 export class Router {
-    constructor () {
+    constructor() {
         this.swup = new Swup({
             containers: ["#swup"]
         }) 

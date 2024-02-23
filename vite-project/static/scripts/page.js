@@ -2,7 +2,7 @@ import { app } from "/index.js"
 import { TransitionOverlay } from "./logic/transitionOverlay.js"
 
 export class Page { 
-    constructor () {
+    constructor() {
         this.title = document.title 
         this.init()
     }
@@ -14,7 +14,7 @@ export class Page {
     }
 
     getPageTitle = () => {
-        console.log("Page title", this.title) 
+        console.log("Init page", this.title) 
     }
 
     destroy = () => { 
