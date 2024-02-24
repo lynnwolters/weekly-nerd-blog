@@ -3,9 +3,7 @@ import { app } from "/index.js"
 
 export class Router {
     constructor() {
-        this.swup = new Swup({
-            containers: ["#swup"]
-        }) 
+        this.swup = new Swup({}) 
         this.init()
     }
     
@@ -14,7 +12,7 @@ export class Router {
     }
 
     bindEvents = () => { 
-        this.swup.hooks.on("content:replace", this.contentReplaced) 
+        this.swup.on("contentReplaced", this.contentReplaced) 
     }
 
     contentReplaced = () => { 
