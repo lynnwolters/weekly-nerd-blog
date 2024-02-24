@@ -1,5 +1,6 @@
 import { Page } from "./page.js" 
 import { Router } from "./router.js" 
+import { Cursor } from "./logic/cursor.js"
 import { Carousel } from "./logic/carousel.js"
 
 export class App { 
@@ -9,6 +10,7 @@ export class App {
     
     init = () => {
         this.router = new Router()
+        this.cursor = new Cursor()
         this.carousel = new Carousel()
     }
     
