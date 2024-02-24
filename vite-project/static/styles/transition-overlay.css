@@ -8,7 +8,7 @@
     z-index: 1001;
 
     background-color: var(--color-2);
-    opacity: 0;
+    opacity: .5;
 
     pointer-events: none;
 
@@ -16,7 +16,7 @@
 }
 
 html.is-changing .transition-overlay {
-    opacity: 1;
+    opacity: .5;
 }
 
 html.is-animating .transition-overlay {
