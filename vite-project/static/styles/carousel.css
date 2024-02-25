@@ -54,10 +54,6 @@
     transition: all .2s ease-in-out;
 }
 
-.main-index ul li a.animate-cards {
-    scale: 1.2;
-}
-
 .main-index ul li a div {
     width: 100%;
     min-height: 50%;

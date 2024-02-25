@@ -13,15 +13,28 @@ export class Carousel {
     init = () => {
         this.bindEvents()
         this.cardColors()
-        this.animateCards()
+        this.animateCardsOnScroll()
     }
 
     bindEvents = () => {
-        this.carousel.addEventListener("scroll", this.animateCards)
-        this.cards.forEach((card) => {
+        this.carousel.addEventListener("scroll", this.animateCardsOnScroll)
+
+        this.cards.forEach((card, index) => {
             card.addEventListener("click", () => {
                 const transitionOverlayColor = card.style.backgroundColor
                 this.setTransitionOverlayColor(transitionOverlayColor)
+            })
+
+            card.addEventListener("mouseenter", () => {
+                if (!this.isCardActive(card)) {
+                    this.animateCardsOnMouseEnter(card, index)
+                }
+            })
+
+            card.addEventListener("mouseleave", () => {
+                if (!this.isCardActive(card)) {
+                    this.animateCardsOnMouseLeave(card)
+                }
             })
         })
     }
@@ -37,18 +50,34 @@ export class Carousel {
         })
     }
 
-    animateCards = () => {
-        this.cards.forEach((card) => {
+    animateCardsOnScroll = () => {
+        this.cards.forEach((card, index) => {
             const rect = card.getBoundingClientRect()
             const containerRect = this.carousel.getBoundingClientRect()
             const cardCenter = rect.left + rect.width / 2
             const containerCenter = containerRect.left + containerRect.width / 2
 
             if (Math.abs(cardCenter - containerCenter) < 10) {
-                card.classList.add("animate-cards")
+                const rotationDegrees = index % 2 === 0 ? "4deg" : "-4deg"
+                card.style.transform = `scale(1.2) rotate(${rotationDegrees})`
+                card.setAttribute('data-animated', 'true')
             } else {
-                card.classList.remove("animate-cards")
+                card.style.transform = "scale(1) rotate(0deg)"
+                card.removeAttribute('data-animated')
             }
         })
+    }
+
+    animateCardsOnMouseEnter = (card, index) => {
+        const rotationDegrees = index % 2 === 0 ? "4deg" : "-4deg"
+        card.style.transform = `rotate(${rotationDegrees})`
+    }
+
+    animateCardsOnMouseLeave = (card) => {
+        card.style.transform = "rotate(0deg)"
+    }
+
+    isCardActive = (card) => {
+        return card.getAttribute('data-animated') === 'true'
     }
 }
