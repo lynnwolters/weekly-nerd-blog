@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./static/styles/nav.css">
     <link rel="stylesheet" href="./static/styles/carousel.css">
     <link rel="stylesheet" href="./static/styles/article.css">
+    <link rel="stylesheet" href="./static/styles/swup.css">
   </head>
 
   <body>
@@ -47,13 +48,13 @@
     </nav>
 
     <!-- SWUP CONTAINER -->
-    <div id="swup" class="transition-fade">
+    <div id="swup">
 
       <!-- CAROUSEL -->
       <main class="main-index">
-        <ul>
+        <ul class="carousel">
           <li>
-            <a href="kilian-valkhof.html">
+            <a href="kilian-valkhof.html" class="cards">
               <div>
                 <img src="./static/images/kilian-valkhof.png" alt="kilian-valkhof">
               </div>
@@ -62,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="fenna-de-wilde.html" class="cards">
               <div>
                 <img src="./static/images/fenna-de-wilde.png" alt="fenna-de-wilde">
               </div>
@@ -71,13 +72,13 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="progress-review-1.html" class="cards">
               <h2>Progress<br>Review</h2>
               <h3>1/3</h3>
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -86,7 +87,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -95,7 +96,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -104,7 +105,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -113,7 +114,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -122,7 +123,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -131,13 +132,13 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <h2>Progress<br>Review</h2>
               <h3>2/3</h3>
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -146,7 +147,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -155,7 +156,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -164,7 +165,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards"> 
               <div>
                 <img src="./static/images/no-profile-picture.png" alt="no-profile-picture">
               </div>
@@ -173,7 +174,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a class="cards">
               <h2>Progress<br>Review</h2>
               <h3>3/3</h3>
             </a>
@@ -182,6 +183,9 @@
       </main>
 
     </div>
+
+    <!-- PAGE TRANSITION -->
+    <div class="transition-overlay"></div>
 
     <!-- SCRIPT -->
     <script type="module" src="index.js"></script>
