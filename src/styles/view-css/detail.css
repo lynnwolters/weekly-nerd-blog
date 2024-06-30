@@ -1,0 +1,53 @@
+.header-detail {
+    height: 100dvh;
+
+    z-index: -2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        & img {
+            width: 75%;
+        }
+    }
+}
+
+.main-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & article {
+        width: 60%;
+
+        margin-bottom: 8em;
+
+        & div {
+            margin-bottom: 4em;
+
+            text-align: center;
+
+            & h2 {
+                margin-bottom: .2em;
+            }
+        }
+    }
+
+    & nav {
+        width: 60%;
+        height: 25dvh;
+
+        & ul  {
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

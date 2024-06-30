@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "MoglanDemo";
+    src: url("/src/fonts/MoglanDemo.woff");
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+    font-family: "MoglanDemo";
+    font-synthesis: none;
+    line-height: 100%;
+}
+
+h3, h4, h5, h6, p, a, button {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.text-xl {
+    font-size: 12em;
+}
+
+.text-lg {
+    font-size: 3em;
+}
+
+.text-xs {
+    font-size: .85em;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
+.text-light-dark-blue {
+    color: var(--light-dark-blue);
+}
+
+.paragraph {
+    line-height: 160%;
+}

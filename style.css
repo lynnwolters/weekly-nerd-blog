@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    
+    background-color: var(--dark-blue);
+}
+
+li {
+    list-style: none;
+}
+
+a, button {
+    cursor: pointer;
+}
