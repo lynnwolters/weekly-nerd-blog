@@ -1,1 +1,1 @@
-# wnb-lynnwolters
+# Weekly Nerd Blog
